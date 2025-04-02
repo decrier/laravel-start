@@ -15,23 +15,22 @@
 
     <h1>Laravel Bootstrap-Card</h1>
     <div class="container">
-        @section('content')
-            <h1>Komponenten (moderne Variante)</h1>
+
             <div class="card">
                 <div class="card-header">
-                    <h2>Gerüst</h2>
+                    <h2>@yield('card-header')</h2>
                 </div>
 
                 <div class="card-body">
-                    <h5 class="card-title">{{ $title }}</h5>
-                    <p class="card-text">{{ $slot }}</p>
+                    <h5 class="card-title">@yield('card-title')</h5>
+                    <p class="card-text">@yield('card-text')</p>
                 </div>
 
                 <div class="card-footer">
-                    <p>{{ $footer}}</p>
+                    <p>@yield('footer')</p>
                 </div>
             </div>
-        @show
+
     </div>
 
 </body>
