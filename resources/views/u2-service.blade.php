@@ -1,17 +1,7 @@
-@extends('components/u2-master')
-
-@section('card-header')
-    <h3>{{ $card_header}}</h3>
-@endsection
-
-@section('card-title')
-    <h3>{{ $card_title}}</h3>
-@endsection
-
-@section('card-text')
-    <h5>{{ $card_text}}</h5>
-@endsection
-
-@section('footer')
-    <h3>Service-Card Footer</h3>
-@endsection
+<x-u2-master 
+  title={{$title}} 
+  cardheader="Unser Service-Team hilft Ihnen gern"
+  cardtitle={{$heading}}
+  cardfooter="Weiterlesen...">
+  {!!$content!!}
+</x-u2-master>
