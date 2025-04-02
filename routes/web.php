@@ -92,3 +92,20 @@ Route::get( '/card', function() {
 Route::get( '/card', function() {
     return view('component-2');
 });
+
+// Übungen
+Route::get( '/portfolio', function() {
+    return view ('u2-portfolio', [
+        'card_header' => 'Portfolio-Card Header',
+        'card_title' => 'Portfolio-Card Title',
+        'card_text' => 'Portfolio-Card Text'
+    ]);
+});
+
+Route::get( '/service', function() {
+    return view('u2-service', [
+        'card_header' => 'Service-Card Header',
+        'card_title' => 'Service-Card Title',
+        'card_text' => 'Service-Card Text'
+    ]);
+});
